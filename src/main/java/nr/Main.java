@@ -1,6 +1,7 @@
 package nr;
 
 import java.awt.*;
+import java.util.Scanner;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -9,6 +10,8 @@ public class Main {
     private int[] times = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
     private Timer[] timers = new Timer[15];
     private TimerTask[] tasks = new TimerTask[15];
+
+    private Scanner scanner = new Scanner(System.in);
 
     private String[] titles = {
             // competition
@@ -49,6 +52,12 @@ public class Main {
         };
         timers[0].schedule(tasks[0], 0, 1000);
         System.out.println(titles[0]);
+
+        String userInput = scanner.nextLine();
+        if (userInput.equalsIgnoreCase("accept")) {
+            stopTimer1();
+            run2();
+        }
     }
 
     private void doSomething1(int i) {
@@ -150,7 +159,6 @@ public class Main {
             timers[3].cancel();
             System.out.println(" ");
             System.out.println(titles[4]);
-
         }
     }
 }
