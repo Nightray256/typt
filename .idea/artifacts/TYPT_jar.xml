@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="TYPT:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TYPT_jar</output-path>
+    <root id="archive" name="TYPT.jar">
+      <element id="module-output" name="TYPT" />
+    </root>
+  </artifact>
+</component>
