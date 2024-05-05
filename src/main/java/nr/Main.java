@@ -6,15 +6,25 @@ import java.util.TimerTask;
 
 public class Main {
 
-    private int[] times = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
-    private Timer[] timers = new Timer[3];
-    private TimerTask[] tasks = new TimerTask[3];
+    private int[] times = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+    private Timer[] timers = new Timer[15];
+    private TimerTask[] tasks = new TimerTask[15];
 
     private String[] titles = {
-            "\u001B[38;5;153m" + "The Opponent challenges the Reporter for the problem.",
-            "\u001B[38;5;153m" + "The Reporter accepts or rejects the challenge.",
-            "\u001B[38;5;153m" + "Preparation of the Reporter.",
-            "\u001B[38;5;153m" + "Presentation of the reporter."
+            "\u001B[38;5;153m" + "The Opponent challenges the Reporter for the problem",// 1min
+            "\u001B[38;5;153m" + "The Reporter accepts or rejects the challenge",// 1min
+            "\u001B[38;5;153m" + "Preparation of the Reporter",// 5mins
+            "\u001B[38;5;153m" + "Presentation of the reporter",// 12mins
+            "\u001B[38;5;153m" + "Questions of the Opponent to the Reporter and answers of the Reporter",// 2mins
+            "\u001B[38;5;153m" + "Preparation of the Opponent",// 3mins
+            "\u001B[38;5;153m" + "The Opponent takes the floor",// 4mins
+            "\u001B[38;5;153m" + "Discussion between the Reporter and the Opponent",//10mins
+            "\u001B[38;5;153m" + "The Opponent summarizes the discussion",//1mins
+            "\u001B[38;5;153m" + "Questions of the Reviewer to the Reporter and the Opponent and answers to the questions",// 3mins
+            "\u001B[38;5;153m" + "Preparation of the Reviewer",// 2mins
+            "\u001B[38;5;153m" + "The Reviewer takes the floor",// 4mins
+            "\u001B[38;5;153m" + "Concluding remarks of the Reporter",// 2min
+            "\u001B[38;5;153m" + "Questions of the Jury"// 3mins
     };
 
     public static void main(String[] args) {
@@ -26,6 +36,7 @@ public class Main {
         timers[0] = new Timer();
         tasks[0] = new TimerTask() {
             private int count = 0;
+
             public void run() {
                 if (count >= 5) {
                     stopTimer1();
@@ -52,10 +63,11 @@ public class Main {
         }
     }
 
-    public void run2(){
+    public void run2() {
         timers[1] = new Timer();
         tasks[1] = new TimerTask() {
             private int count2 = 0;
+
             public void run() {
                 if (count2 >= 5) {
                     stopTimer2();
@@ -85,6 +97,7 @@ public class Main {
         timers[2] = new Timer();
         tasks[2] = new TimerTask() {
             private int count3 = 0;
+
             public void run() {
                 if (count3 >= 5) {
                     stopTimer3();
@@ -106,6 +119,37 @@ public class Main {
             timers[2].cancel();
             System.out.println(" ");
             System.out.println(titles[3]);
+            run4();
+        }
+    }
+
+    private void run4() {
+        timers[3] = new Timer();
+        tasks[3] = new TimerTask() {
+            private int count4 = 0;
+
+            public void run() {
+                if (count4 >= 5) {
+                    stopTimer4();
+                    return;
+                }
+                doSomething4(times[3]++);
+                count4++;
+            }
+        };
+        timers[3].schedule(tasks[3], 0, 1000);
+    }
+
+    private void doSomething4(int l) {
+        System.out.println("\u001B[38;5;231m" + l + "s");
+    }
+
+    private void stopTimer4() {
+        if (timers[3] != null) {
+            timers[3].cancel();
+            System.out.println(" ");
+            System.out.println(titles[4]);
+
         }
     }
 }
