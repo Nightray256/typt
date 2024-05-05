@@ -54,11 +54,15 @@ public class Main {
         int minutes = i / 60;
         int seconds = i % 60;
 
-        if (seconds == 59) {
+        if (seconds == 60) {
             minutes++;
-            seconds = 1;
+            seconds = 0;
         }
-        System.out.println("\u001B[38;5;231m" + minutes + "min " + seconds + "s");
+        System.out.print("\u001B[38;5;231m" + minutes + "min ");
+        if (seconds < 10) {
+            System.out.print("0");
+        }
+        System.out.println(seconds + "s");
     }
 
     private void stopTimer1() {
@@ -92,11 +96,15 @@ public class Main {
         int minutes = j / 60;
         int seconds = j % 60;
 
-        if (seconds == 59) {
+        if (seconds == 60) {
             minutes++;
-            seconds = 1;
+            seconds = 0;
         }
-        System.out.println("\u001B[38;5;231m" + minutes + "min " + seconds + "s");
+        System.out.print("\u001B[38;5;231m" + minutes + "min ");
+        if (seconds < 10) {
+            System.out.print("0");
+        }
+        System.out.println(seconds + "s");
     }
 
     private void stopTimer2() {
@@ -129,11 +137,15 @@ public class Main {
         int minutes = k / 60;
         int seconds = k % 60;
 
-        if (seconds == 59) {
+        if (seconds == 60) {
             minutes++;
-            seconds = 1;
+            seconds = 0;
         }
-        System.out.println("\u001B[38;5;231m" + minutes + "min " + seconds + "s");
+        System.out.print("\u001B[38;5;231m" + minutes + "min ");
+        if (seconds < 10) {
+            System.out.print("0");
+        }
+        System.out.println(seconds + "s");
     }
 
     private void stopTimer3() {
@@ -166,11 +178,15 @@ public class Main {
         int minutes = l / 60;
         int seconds = l % 60;
 
-        if (seconds == 59) {
+        if (seconds == 60) {
             minutes++;
-            seconds = 1;
+            seconds = 0;
         }
-        System.out.println("\u001B[38;5;231m" + minutes + "min " + seconds + "s");
+        System.out.print("\u001B[38;5;231m" + minutes + "min ");
+        if (seconds < 10) {
+            System.out.print("0");
+        }
+        System.out.println(seconds + "s");
     }
 
     private void stopTimer4() {
@@ -203,11 +219,15 @@ public class Main {
         int minutes = m / 60;
         int seconds = m % 60;
 
-        if (seconds == 59) {
+        if (seconds == 60) {
             minutes++;
-            seconds = 1;
+            seconds = 0;
         }
-        System.out.println("\u001B[38;5;231m" + minutes + "min " + seconds + "s");
+        System.out.print("\u001B[38;5;231m" + minutes + "min ");
+        if (seconds < 10) {
+            System.out.print("0");
+        }
+        System.out.println(seconds + "s");
     }
 
     private void stopTimer5() {
@@ -240,11 +260,15 @@ public class Main {
         int minutes = n / 60;
         int seconds = n % 60;
 
-        if (seconds == 59) {
+        if (seconds == 60) {
             minutes++;
-            seconds = 1;
+            seconds = 0;
         }
-        System.out.println("\u001B[38;5;231m" + minutes + "min " + seconds + "s");
+        System.out.print("\u001B[38;5;231m" + minutes + "min ");
+        if (seconds < 10) {
+            System.out.print("0");
+        }
+        System.out.println(seconds + "s");
     }
 
     private void stopTimer6() {
@@ -277,11 +301,15 @@ public class Main {
         int minutes = o / 60;
         int seconds = o % 60;
 
-        if (seconds == 59) {
+        if (seconds == 60) {
             minutes++;
-            seconds = 1;
+            seconds = 0;
         }
-        System.out.println("\u001B[38;5;231m" + minutes + "min " + seconds + "s");
+        System.out.print("\u001B[38;5;231m" + minutes + "min ");
+        if (seconds < 10) {
+            System.out.print("0");
+        }
+        System.out.println(seconds + "s");
     }
 
     private void stopTimer7() {
@@ -314,11 +342,15 @@ public class Main {
         int minutes = p / 60;
         int seconds = p % 60;
 
-        if (seconds == 59) {
+        if (seconds == 60) {
             minutes++;
-            seconds = 1;
+            seconds = 0;
         }
-        System.out.println("\u001B[38;5;231m" + minutes + "min " + seconds + "s");
+        System.out.print("\u001B[38;5;231m" + minutes + "min ");
+        if (seconds < 10) {
+            System.out.print("0");
+        }
+        System.out.println(seconds + "s");
     }
 
     private void stopTimer8() {
@@ -351,11 +383,15 @@ public class Main {
         int minutes = q / 60;
         int seconds = q % 60;
 
-        if (seconds == 59) {
+        if (seconds == 60) {
             minutes++;
-            seconds = 1;
+            seconds = 0;
         }
-        System.out.println("\u001B[38;5;231m" + minutes + "min " + seconds + "s");
+        System.out.print("\u001B[38;5;231m" + minutes + "min ");
+        if (seconds < 10) {
+            System.out.print("0");
+        }
+        System.out.println(seconds + "s");
     }
 
     private void stopTimer9() {
@@ -388,11 +424,15 @@ public class Main {
         int minutes = r / 60;
         int seconds = r % 60;
 
-        if (seconds == 59) {
+        if (seconds == 60) {
             minutes++;
-            seconds = 1;
+            seconds = 0;
         }
-        System.out.println("\u001B[38;5;231m" + minutes + "min " + seconds + "s");
+        System.out.print("\u001B[38;5;231m" + minutes + "min ");
+        if (seconds < 10) {
+            System.out.print("0");
+        }
+        System.out.println(seconds + "s");
     }
 
     private void stopTimer10() {
@@ -425,11 +465,15 @@ public class Main {
         int minutes = s / 60;
         int seconds = s % 60;
 
-        if (seconds == 59) {
+        if (seconds == 60) {
             minutes++;
-            seconds = 1;
+            seconds = 0;
         }
-        System.out.println("\u001B[38;5;231m" + minutes + "min " + seconds + "s");
+        System.out.print("\u001B[38;5;231m" + minutes + "min ");
+        if (seconds < 10) {
+            System.out.print("0");
+        }
+        System.out.println(seconds + "s");
     }
 
     private void stopTimer11() {
@@ -462,11 +506,15 @@ public class Main {
         int minutes = s / 60;
         int seconds = s % 60;
 
-        if (seconds == 59) {
+        if (seconds == 60) {
             minutes++;
-            seconds = 1;
+            seconds = 0;
         }
-        System.out.println("\u001B[38;5;231m" + minutes + "min " + seconds + "s");
+        System.out.print("\u001B[38;5;231m" + minutes + "min ");
+        if (seconds < 10) {
+            System.out.print("0");
+        }
+        System.out.println(seconds + "s");
     }
 
     private void stopTimer12() {
@@ -499,11 +547,15 @@ public class Main {
         int minutes = t / 60;
         int seconds = t % 60;
 
-        if (seconds == 59) {
+        if (seconds == 60) {
             minutes++;
-            seconds = 1;
+            seconds = 0;
         }
-        System.out.println("\u001B[38;5;231m" + minutes + "min " + seconds + "s");
+        System.out.print("\u001B[38;5;231m" + minutes + "min ");
+        if (seconds < 10) {
+            System.out.print("0");
+        }
+        System.out.println(seconds + "s");
     }
 
     private void stopTimer13() {
@@ -536,11 +588,15 @@ public class Main {
         int minutes = u / 60;
         int seconds = u % 60;
 
-        if (seconds == 59) {
+        if (seconds == 60) {
             minutes++;
-            seconds = 1;
+            seconds = 0;
         }
-        System.out.println("\u001B[38;5;231m" + minutes + "min " + seconds + "s");
+        System.out.print("\u001B[38;5;231m" + minutes + "min ");
+        if (seconds < 10) {
+            System.out.print("0");
+        }
+        System.out.println(seconds + "s");
     }
 
     private void stopTimer14() {
